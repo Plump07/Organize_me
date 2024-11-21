@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="calendar-container">
+            <h1 class="h1">Calendário de Tarefas</h1>
+            <div class="calendar-box">
+                <div class="calendar">
+                    <button onclick="showTaskSection('Janeiro', 31)">Janeiro</button>
+                    <button onclick="showTaskSection('Fevereiro', 28)">Fevereiro</button>
+                    <button onclick="showTaskSection('Março', 31)">Março</button>
+                    <button onclick="showTaskSection('Abril', 30)">Abril</button>
+                    <button onclick="showTaskSection('Maio', 31)">Maio</button>
+                    <button onclick="showTaskSection('Junho', 30)">Junho</button>
+                    <button onclick="showTaskSection('Julho', 31)">Julho</button>
+                    <button onclick="showTaskSection('Agosto', 31)">Agosto</button>
+                    <button onclick="showTaskSection('Setembro', 30)">Setembro</button>
+                    <button onclick="showTaskSection('Outubro', 31)">Outubro</button>
+                    <button onclick="showTaskSection('Novembro', 30)">Novembro</button>
+                    <button onclick="showTaskSection('Dezembro', 31)">Dezembro</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="task-section">
+            <button id="back-to-calendar" onclick="goBackToCalendar()">Voltar ao Calendário</button>
+            <h2 id="task-section-title">Tarefas do Mês</h2>
+            <div id="days-container"></div>
+            <form id="task-form" onsubmit="addTask(event)">
+                <input type="text" id="task-name" placeholder="Nome da Tarefa" required>
+                <input type="text" id="task-desc" placeholder="Descrição da Tarefa" required>
+                <div id="selected-date" class="selected-date-placeholder">Data Selecionada: Nenhuma</div>
+                <button style="margin-top: 20px;" type="submit">Adicionar Tarefa</button>
+            </form>
+            <button id="complete-tasks" onclick="completeAllTasks()">Concluir Todas as Tarefas</button>
+            <div id="tasks-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

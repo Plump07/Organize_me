@@ -1,0 +1,283 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff9ea;
+}
+
+section {
+    padding: 28px 8%;
+
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0026ff;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color .3s ease;
+    color: white;
+}
+
+.btn-default:hover {
+    background-color: #0077ff;
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #fff;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1d1d1d;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease;
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Container principal */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo do calendário */
+.calendar-container {
+    margin-bottom: 30px;
+    margin-top: 150px;
+}
+
+.h1{
+    margin-bottom: 20px;
+}
+
+.calendar-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.calendar button {
+    background-color: #2196F3;
+    color: #fff;
+    padding: 20px 40px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calendar button:hover {
+    background-color: #1976D2;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para a seção de tarefas */
+#task-section {
+    display: none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#task-section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#days-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.day {
+    background-color: #2196F3;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.day:hover {
+    background-color: #1976D2;
+    transform: scale(1.1);
+}
+
+.day.selected {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.selected-date-placeholder {
+    background-color: #2196F3;
+    color: #fff;
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#task-form input {
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #1976D2;
+}
+
+/* Botões adicionais */
+#back-to-calendar {
+    margin-top: 20px;
+}
+
+#complete-tasks {
+    margin-top: 20px;
+}
+
+/* Layout das tarefas */
+#tasks-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* Tarefas */
+.task {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s, color 0.3s;
+    color: #333;
+}
+
+.task:hover {
+    transform: scale(1.05);
+}
+
+.task.done {
+    background-color: #e0ffe0;
+    text-decoration: line-through;
+    color: #666;
+}
+
+.task-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.task-desc {
+    color: #666;
+}
+
+.task-footer {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.task {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s, color 0.3s;
+    color: #333;
+    margin-bottom: 15px; /* Adiciona espaçamento entre tarefas */
+}
+
+
+.task-footer {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.edit-task-btn, .delete-task-btn {
+    margin-right: 10px; /* Espaçamento entre os botões */
+    margin-top: 10px;   /* Espaçamento entre botões e o conteúdo acima */
+}
+
