@@ -6,6 +6,6 @@ Organize-me é um site simples e intuitivo para gerenciar tarefas pessoais. Perm
 # Linguagens Utilizadas
  HTML, CSS, PYTHON e JS
 
-#Integrantes
+# Integrantes
 
 Raphael Plump, Rodrigo Leonardis, Nicolas Benincá e Teresa Repenning
